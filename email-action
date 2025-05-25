@@ -1,0 +1,18 @@
+name: Email in Action Demo
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: 24f3005007@ds.study.iitm.ac.in - Setup step
+        run: echo "Setting up environment..."
+        
+      - name: Run tests
+        run: echo "Running tests..."
+        
+      - name: Notify completion
+        run: echo "Action complete!"
